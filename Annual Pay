@@ -1,0 +1,21 @@
+//  Created by brandon mitchell
+//  Copyright © 2017 brandon mitchell. All rights reserved.
+//
+// Annual Pay - Suppose an employee gets paid every two weeks and earns 1700.00 each pay period in a year.
+// The employee gets paid 26 times a year
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+    double payAmount = 1700.00;
+    double payPeriods = 26;
+    double annualPay;
+    
+    annualPay = payAmount * payPeriods;
+    
+    cout << "The annual Pay for the employee is : $"<< annualPay << endl;
+    
+    return 0;
+}
