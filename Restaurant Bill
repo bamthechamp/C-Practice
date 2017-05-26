@@ -1,0 +1,40 @@
+//  Created by brandon mitchell
+//  Copyright © 2017 brandon mitchell. All rights reserved.
+//
+// Calculate Sales Tax and tip on a resturant bill for a patron
+// with 44.50 meal charge. Tax is 6.75 percent of the meal cost.
+// Tip should be 15 percent of the total after adding the tax
+// Display the meal cost, tax amount, tip amount, and total bill
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+   //Variables
+    double meal = 44.50;
+    double tax = 0.0675;
+    double tip = 0.15;
+    
+    //Caculate Tax Amount
+    double tax_amount = meal * tax;
+    
+    //Meal cost befor tip
+    double meal_before_tip = tax_amount + meal;
+    
+    //Caculate Tip Amount
+    double tip_amount = meal_before_tip * tip;
+    
+    //Caculate total meal cost
+    double total_cost = meal + tax_amount + tip_amount;
+    
+    //Display Results
+    cout << "Cost of meal   : " << meal << endl;
+    cout << "Tax Amount     : " << tax_amount << endl;
+    cout << "Tip Amount     : " << tip_amount << endl;
+    cout << "Total Bill     : " << total_cost << endl;
+    
+    
+    return 0;
+}
