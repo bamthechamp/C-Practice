@@ -1,0 +1,29 @@
+//  Created by brandon mitchell
+//  Copyright © 2017 brandon mitchell. All rights reserved.
+// 
+// Caculate the Avergae of Values
+// I chose not to use Arrays or Loops
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+    //Vaules
+    int number1 = 28;
+    int number2 = 32;
+    int number3 = 37;
+    int number4 = 24;
+    int number5 = 33;
+    
+    // Caluculate the sume
+    double sum = number1 + number2 + number3 + number4 + number5;
+    
+    double average = sum / 5;
+    
+    //Display Result
+    cout << average << endl;
+
+    
+    return 0;
+}
